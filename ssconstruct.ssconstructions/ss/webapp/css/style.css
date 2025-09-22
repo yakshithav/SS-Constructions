@@ -1,0 +1,109 @@
+/* Enter your custom styles here*/
+body {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'futura_ltbook', sans-serif;
+    color: #484848;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #484848;
+    font-family: 'futura_ltbold', sans-serif;
+}
+h1{font-size: 70px; margin:0; line-height: 72px;}
+h2 {font-size: 30px; margin: 0 0 20px;}
+h3 {font-size: 20px; margin: 0 0 10px;}
+img {width: 100%;}
+a,button{outline: 0 !important;}
+a:hover,a:focus{ text-decoration: none}
+
+
+/* Top Navigation Bar */
+.topNavBar {
+  background-color: #f4c10f !important; /* Yellow background */
+  font-family: 'futura_ltbook', sans-serif;
+  padding: 15px 0px; /* Increased padding for more height */
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 50px; /* Fixed height */
+  min-height: 50px; /* Minimum height */
+  display: flex;
+  align-items: center; /* Vertically center content */
+}
+
+.topNavBar .sapMText,
+.topNavBar .sapMLnk,
+.topNavBar .sapUiIcon {
+  color: black !important;
+  font-weight: 400;
+}
+
+.topNavBar .sapMLnk:hover {
+  color: black !important;
+  text-decoration: none;
+}
+
+.topNavBar .sapUiIcon {
+  vertical-align: middle;
+  background-color: #f4c10f !important;
+  margin-right: 4px;
+}
+
+/* Adjust spacing between left & right */
+.topNavBar .sapMHBox {
+  gap: 12px;
+  height: 100%; /* Take full height of navbar */
+  align-items: center; /* Center items vertically */
+}
+
+/* Additional styling for better appearance */
+.topNavBar .sapMSlt {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.topNavBar .sapMSlt:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.topNavBar .sapMBtn {
+  background-color: transparent !important;
+}
+
+.topNavBar .sapMBtn:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.mainNavBar {
+  background-color: black !important;         /* Black background */
+  padding: 15px 30px;              /* More padding = more height */
+  min-height: 150px;                /* Ensures enough space for logo */
+  display: flex;
+  align-items: center;             /* Vertically center logo + links */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mainNavBar .sapMLnk {
+font-family: 'futura_ltbook', sans-serif;
+  margin: 0 12px;
+  color: #fff !important;          /* White text for visibility */
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.mainNavBar .sapMLnk:hover,
+.mainNavBar .sapMLnk:focus {
+  color: rgb(168, 163, 163) !important;  /* Your hover color */
+  text-decoration: none !important;      /* Remove underline */
+}
+
+.navLinks {
+  gap: 24px;                       /* spacing between links */
+}
+
+.mainNavBar img {
+  min-height: 100px;      
+  padding :20px 40px;
+}
+
