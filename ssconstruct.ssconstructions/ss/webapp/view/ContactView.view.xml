@@ -1,0 +1,31 @@
+<mvc:View
+    controllerName="myui5app.controller.Contact"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page title="Contact Us" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <VBox class="sapUiSmallMargin" width="50%">
+                <Label text="Name"/>
+                <Input value="{contact>/name}" placeholder="Enter your name"/>
+                
+                <Label text="Email"/>
+                <Input value="{contact>/email}" placeholder="Enter your email"/>
+                
+                <Label text="Phone"/>
+                <Input value="{contact>/phone}" placeholder="Enter your phone number"/>
+                
+                <Label text="Message"/>
+                <TextArea value="{contact>/message}" placeholder="Your message"/>
+                
+                <Button text="Submit" press="onSubmit" type="Emphasized"/>
+            </VBox>
+
+            <Toolbar class="sapUiMediumMargin">
+                <Button icon="sap-icon://phone" text="Call Us" press="onCall"/>
+                <Button icon="sap-icon://message-popup" text="WhatsApp" press="onWhatsapp"/>
+                <Button icon="sap-icon://email" text="Email" press="onEmail"/>
+            </Toolbar>
+        </content>
+    </Page>
+</mvc:View>

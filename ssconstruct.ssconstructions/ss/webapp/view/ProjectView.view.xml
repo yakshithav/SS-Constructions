@@ -1,0 +1,43 @@
+<mvc:View
+    controllerName="myui5app.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page showHeader="false" class="projectsPage">
+        <content>
+            <VBox class="sapUiSmallMargin">
+                <Text text="PROJECTS" class="projects-header" />
+
+                <HBox class="sapUiSmallMargin" justifyContent="SpaceBetween" wrap="true">
+                    
+                    <!-- Recent Projects Column -->
+                    <VBox class="projects-column" items="{projects>/recentProjects}">
+                        <Text text="Recent Projects" class="section-title"/>
+                        <items>
+                            <Panel class="project-card">
+                                <VBox class="sapUiSmallMargin">
+                                    <Text text="{projects>title}" class="project-title"/>
+                                    <Text text="{projects>day}/{projects>month}/{projects>year}" class="project-date"/>
+                                </VBox>
+                            </Panel>
+                        </items>
+                    </VBox>
+
+                    <!-- Completed Projects Column -->
+                    <VBox class="projects-column" items="{projects>/completedProjects}">
+                        <Text text="Completed Projects" class="section-title"/>
+                        <items>
+                            <Panel class="project-card">
+                                <VBox class="sapUiSmallMargin">
+                                    <Text text="{projects>title}" class="project-title"/>
+                                    <Text text="{projects>day}/{projects>month}/{projects>year}" class="project-date"/>
+                                </VBox>
+                            </Panel>
+                        </items>
+                    </VBox>
+
+                </HBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
