@@ -1,0 +1,15 @@
+<mvc:View
+  controllerName="ss.controller.About"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+
+  <Page title="About Us">
+    <content>
+      <VBox class="sapUiSmallMargin">
+        <Title text="About S S Constructions" level="H1"/>
+        <Text text="We are a trusted construction company with years of expertise in delivering top-quality projects."/>
+        <Text text="Our mission is to bring innovation, precision, and excellence into every project we handle."/>
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

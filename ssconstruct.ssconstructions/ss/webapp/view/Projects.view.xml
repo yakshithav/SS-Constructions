@@ -1,0 +1,176 @@
+<mvc:View
+    controllerName="ss.controller.Projects"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout">
+
+    <Page title="Our Projects" showNavButton="false">
+        <content>
+            <!-- Include the NavBar fragment -->
+            <core:Fragment fragmentName="ss.fragment.NavBar" type="XML"/>
+
+            <VBox class="sapUiSmallMargin" alignItems="Center">
+                <Title text="Projects" level="H1"/>
+                <Text
+                    text="At S S Constructions, we take pride in delivering excellence 🏆 in every project we undertake. Since 2018 📅, we've completed 35+ high-quality ✔️, innovative 💡, and durable 🛡️ projects in Bangalore and beyond."/>
+
+                <!-- Buttons Section -->
+                <HBox justifyContent="Center" class="projectButtonsBox" renderType="Bare">
+                    <Button
+                        text="🏠 Projects Completed"
+                        type="Emphasized"
+                        press=".onCompletedPress"
+                        class="projectCompletedBtn"/>
+                    <Button
+                        text="🚧 Ongoing Projects - Bangalore &amp; Bagalkot"
+                        type="Emphasized"
+                        press=".onOngoingPress"
+                        class="projectOngoingBtn"/>
+                </HBox>
+            </VBox>
+
+            <!-- Projects Section Side by Side -->
+            <l:Grid defaultSpan="L6 M6 S12" hSpacing="2" vSpacing="2" width="100%">
+                <!-- Recent Projects -->
+                <l:content>
+                    <Panel id="recentProjectsPanel" headerText="Recent Projects" visible="true">
+                        <List id="recentProjectList" mode="SingleSelectMaster" itemPress=".onProjectPress">
+                            <StandardListItem title="Swetha S V Chalukya Nagar Ilkal" description="Underway in November 2024" icon="sap-icon://feeder-arrow">
+                                <customData>
+                                    <core:CustomData key="image" value="images/swetha_s.jpg"/>
+                                </customData>
+                            </StandardListItem>
+                            <StandardListItem title="Shivarudraswamy &amp; Basavaraj Brother's Bangalore" description="Underway in August 2024" icon="sap-icon://feeder-arrow">
+                                <customData>
+                                    <core:CustomData key="image" value="images/shivarudra_b.jpg"/>
+                                </customData>
+                            </StandardListItem>
+                            <StandardListItem title="Dheeraj Sir &amp; Nanditha Madam - Bangalore" description="Underway, started April 2025" icon="sap-icon://feeder-arrow">
+                                <customData>
+                                    <core:CustomData key="image" value="images/dheeraj.jpeg"/>
+                                </customData>
+                            </StandardListItem>
+                            <StandardListItem title="Sajjala Shree Math Kandagal-Ilkal" description="Underway in May 2024" icon="sap-icon://feeder-arrow">
+                                <customData>
+                                    <core:CustomData key="image" value="images/sajjal.jpg"/>
+                                </customData>
+                            </StandardListItem>
+                            <StandardListItem title="Veerabhadrayya &amp; Mahantesh Brother's" description="Underway in February 2024" icon="sap-icon://feeder-arrow">
+                                <customData>
+                                    <core:CustomData key="image" value="images/veera.jpg"/>
+                                </customData>
+                            </StandardListItem>
+                            <StandardListItem title="Rajiv Gandhi Seva Kendra Budhihal" description="Underway in February 2024" icon="sap-icon://feeder-arrow">
+                                <customData>
+                                    <core:CustomData key="image" value="images/budihal.jpg"/>
+                                </customData>
+                            </StandardListItem>
+                            <StandardListItem title="Rajiv Gandhi Seva Kendra Gorbhal" description="Underway in February 2024" icon="sap-icon://feeder-arrow">
+                                <customData>
+                                    <core:CustomData key="image" value="images/gorbhal.jpg"/>
+                                </customData>
+                            </StandardListItem>
+                        </List>
+                        <Image id="recentProjectImage" visible="false" width="150px" height="150px" decorative="false" class="customerCircle"/>
+                    </Panel>
+                </l:content>
+
+                 <!-- Completed Projects -->
+          <l:content>
+            <Panel headerText="Completed Projects">
+              <List id="completedProjectList" mode="SingleSelectMaster" itemPress=".onProjectPress">
+                <StandardListItem
+                  title="Satish Sir &amp; Mamatha Madam"
+                  description="Completed in Feb 2022"
+                  icon="sap-icon://accept"
+                  customData="{image:'images/sathish sir.jpg'}"/>
+                <StandardListItem
+                  title="Sri Hampi Virupaksha Nilaya"
+                  description="Completed in March 2023"
+                  icon="sap-icon://accept"
+                  customData="{image:'images/hampi.jpg'}"/>
+                <StandardListItem
+                  title="Sri Veerbhadreshware Nilaya"
+                  description="Completed in June 2023"
+                  icon="sap-icon://accept"
+                  customData="{image:'images/veera_nilaya.jpg'}"/>
+                <StandardListItem
+                  title="Basavaraj Sulibavavi - Hunagund"
+                  description="Completed in Nov 2023"
+                  icon="sap-icon://accept"
+                  customData="{image:'images/basavraj.jpg'}"/>
+                <StandardListItem
+                  title="Shashi Ravi Brother's - Ilkal"
+                  description="Completed in Dec 2022"
+                  icon="sap-icon://accept"
+                  customData="{image:'images/shashi_ravi.jpg'}"/>
+                   <StandardListItem
+                  title="Sri Annapurneshwari Nilay-IB Behind Ilkal"
+                  description="Completed in Feb 2022"
+                  icon="sap-icon://accept"
+                  customData="{image:'images/customer_6.jpg'}"/>
+                <StandardListItem
+                  title="Veerabaddrayya M Hiremath"
+                  description="Completed in March 2023"
+                  icon="sap-icon://accept"
+                  customData="{image:'images/customer_7.jpg'}"/>
+                <StandardListItem
+                  title="Rajasab Ilkal - Basavangar Ilkal"
+                  description="Completed in June 2023"
+                  icon="sap-icon://accept"
+                  customData="{image:'images/customer_8.jpg'}"/>
+                <StandardListItem
+                  title="Basavaraj Sulibavavi - Om ShantiNagar Hunagund"
+                  description="Completed in Nov 2023"
+                  icon="sap-icon://accept"
+                  customData="{image:'images/customer_9.jpg'}"/>
+                <StandardListItem
+                  title="Devu Damble Hunagund – Behind Stadium"
+                  description="Completed in Dec 2022"
+                  icon="sap-icon://accept"
+                  customData="{image:'images/customer_10.jpg'}"/>
+                  <StandardListItem
+                  title="Sharanappa Komanur Hungund Tenehalli Layout"
+                  description="Completed in Dec 2022"
+                  icon="sap-icon://accept"
+                  customData="{image:'images/customer_10.jpg'}"/>
+              </List>
+
+              <!-- Image placeholder -->
+              <Image id="completedProjectImage" visible="false" width="150px" height="150px" decorative="false" class="customerCircle"/>
+            </Panel>
+          </l:content>
+
+        </l:Grid>
+
+
+            <!-- Customer Reviews Section -->
+            <Panel headerText="Customer Reviews">
+                <l:Grid defaultSpan="L4 M6 S12" hSpacing="2" vSpacing="2" width="100%">
+                    <l:content>
+                        <VBox class="sapUiSmallMargin" alignItems="Center">
+                            <Title text="— Basavaraj Sulibavavi" level="H5" class="sapUiSmallMarginTop"/>
+                            <Text text="S S Constructions turned our dream home into reality! Their professionalism, attention to detail, and on-time execution were exceptional. With their expertise, the process was seamless. Highly recommended for anyone building in Bangalore or Bangalore!" textAlign="Center"/>
+                            <Image src="images/customer_1.jpg" class="customerCircle"/>
+                        </VBox>
+                    </l:content>
+                    <l:content>
+                        <VBox class="sapUiSmallMargin" alignItems="Center">
+                            <Title text="— Sathish &amp; Mamtha" level="H5" class="sapUiSmallMarginTop"/>
+                            <Text text="S S Constructions truly live up to their tagline, 'Dream Your House.' Their professionalism, flexibility, and attention to detail brought our vision to life. The team was reliable, efficient, and committed to quality, ensuring a seamless experience." textAlign="Center"/>
+                            <Image src="images/customer_2.jpg" class="customerCircle"/>
+                        </VBox>
+                    </l:content>
+                    <l:content>
+                        <VBox class="sapUiSmallMargin" alignItems="Center">
+                            <Title text="— Veerupaksh Guravinamath" level="H5" class="sapUiSmallMarginTop"/>
+                            <Text text="Working with S S Constructions was a pleasure! Their professionalism, flexibility, and attention to detail made them highly compatible with our needs. They adapted seamlessly to changes and delivered our dream home on time and within budget. Highly recommended!" textAlign="Center"/>
+                            <Image src="images/customer_3.jpg" class="customerCircle"/>
+                        </VBox>
+                    </l:content>
+                </l:Grid>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>

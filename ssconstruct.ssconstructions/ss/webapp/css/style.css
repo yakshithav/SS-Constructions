@@ -1,0 +1,281 @@
+/* Enter your custom styles here*/
+body {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'futura_ltbook', sans-serif;
+    color: #484848;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #484848;
+    font-family: 'futura_ltbold', sans-serif;
+}
+h1{font-size: 70px; margin:0; line-height: 72px;}
+h2 {font-size: 30px; margin: 0 0 20px;}
+h3 {font-size: 20px; margin: 0 0 10px;}
+img {width: 100%;}
+a,button{outline: 0 !important;}
+a:hover,a:focus{ text-decoration: none}
+
+
+/* Top Navigation Bar */
+.topNavBar {
+  background-color: #f4c10f !important; /* Yellow background */
+  font-family: 'futura_ltbook', sans-serif;
+  padding: 15px 0px; /* Increased padding for more height */
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 50px; /* Fixed height */
+  min-height: 50px; /* Minimum height */
+  display: flex;
+  align-items: center; /* Vertically center content */
+}
+
+.topNavBar .sapMText,
+.topNavBar .sapMLnk,
+.topNavBar .sapUiIcon {
+  color: black !important;
+  font-weight: 400;
+}
+
+.topNavBar .sapMLnk:hover {
+  color: black !important;
+  text-decoration: none;
+}
+
+.topNavBar .sapUiIcon {
+  vertical-align: middle;
+  background-color: #f4c10f !important;
+  margin-right: 4px;
+}
+
+/* Adjust spacing between left & right */
+.topNavBar .sapMHBox {
+  gap: 12px;
+  height: 100%; /* Take full height of navbar */
+  align-items: center; /* Center items vertically */
+}
+
+/* Additional styling for better appearance */
+.topNavBar .sapMSlt {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.topNavBar .sapMSlt:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.topNavBar .sapMBtn {
+  background-color: transparent !important;
+}
+
+.topNavBar .sapMBtn:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.mainNavBar {
+  background-color: black !important;         
+  padding: 15px 30px;          
+  min-height: 150px;                
+  display: flex;
+  align-items: center;             
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mainNavBar .sapMLnk {
+font-family: 'futura_ltbook', sans-serif;
+  margin: 0 12px;
+  color: #fff !important;          
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.mainNavBar .sapMLnk:hover,
+.mainNavBar .sapMLnk:focus {
+  color: rgb(168, 163, 163) !important;  
+  text-decoration: none !important;      
+}
+
+.navLinks {
+  gap: 24px;                       
+}
+
+.mainNavBar img {
+  min-height: 100px;      
+  padding :20px 40px;
+}
+
+
+.imageSlider {
+  position: relative;
+}
+
+.slideBox {
+  position: relative;
+  height: 600px;
+}
+
+.slideBox .sapMImg {
+  height: 100%;
+  object-fit: cover;
+}
+
+.sliderOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+
+.vastuOverlay {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+
+.slideSubtitle {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.slideTitle {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.slideTitle.highlight {
+  color: #ffd700; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slideDescription {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 1rem 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.slideContent {
+  margin: 1.5rem 0;
+}
+
+
+.sliderButtons {
+  margin-top: 2rem;
+  gap: 1rem;
+  color:#f4c10f;
+}
+
+.customButton {
+  background-color: #f4c10f !important ;
+  font-family: "futura_ltbold",sans-serif;
+  color:#fff !important;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  border : 1px solid transparent !important;
+  text-transform: uppercase;
+  height: 3rem !important;
+  transition: all 0.3s ease;
+}
+.customButton :hover{
+  background-color: transparent !important;
+  color: #f4c10f !important;
+  border: 1px solid #f4c10f !important; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .slideTitle {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  .slideSubtitle {
+    font-size: 1.2rem;
+  }
+  
+  .slideDescription {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  
+  .sliderOverlay {
+    padding: 1rem;
+  }
+  
+  .sliderButtons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* For project section */
+.customerCircle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover; /* keeps image aspect ratio */
+  border: 3px solid #f1c40f; /* yellow border for style */
+  margin-top: 10px;
+}
+
+
+/* Container spacing */
+.projectButtonsBox .sapMBtn {
+  margin: 0 10px;
+}
+
+/* Completed Projects Button */
+.projectCompletedBtn .sapMBtnInner {
+  background: linear-gradient(135deg, #fbb034, #ffdd00) !important;
+  border-radius: 12px !important;
+  height: 40px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+.projectCompletedBtn .sapMBtnContent {
+  color: black !important;   /* <-- Button text color */
+  text-align: center;
+}
+.projectCompletedBtn .sapMBtnInner:hover {
+  background: linear-gradient(135deg, #ffdd00, #fbb034) !important;
+  transform: scale(1.05);
+}
+
+/* Ongoing Projects Button */
+.projectOngoingBtn .sapMBtnInner {
+  background: linear-gradient(#ffdd00) !important;
+  border-radius: 12px !important;
+  height: 40px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+.projectOngoingBtn .sapMBtnContent {
+  color: black !important;   /* <-- Button text color */
+  text-align: center;
+}
+.projectOngoingBtn .sapMBtnInner:hover {
+  transform: scale(1.05);
+}
+

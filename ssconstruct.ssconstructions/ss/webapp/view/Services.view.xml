@@ -1,0 +1,32 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  controllerName="ss.controller.Services">
+
+  <Page title="Our Services">
+    <content>
+      <VBox class="sapUiSmallMargin sapUiMediumMarginTop">
+        <Title text="Welcome to Our Services" level="H1" />
+        <Text text="We provide high-quality construction and project management services." />
+
+        <MessageStrip
+          text="Explore our wide range of services designed to meet your needs."
+          showIcon="true"
+          type="Information"
+          class="sapUiSmallMarginTop" />
+
+        <Button
+          text="Know More"
+          type="Emphasized"
+          class="sapUiSmallMarginTop"
+          press=".onKnowMore" />
+
+        <Button
+          text="View Projects"
+          type="Default"
+          class="sapUiSmallMarginTop"
+          press=".onViewProjects" />
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

@@ -1,0 +1,53 @@
+<mvc:View
+  controllerName="ss.controller.ContactUs"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+
+  <Page title="Contact Us" showNavButton="false" navButtonPress="onNavBack">
+    
+    <!-- Include the NavBar fragment -->
+    <content>
+      <core:Fragment fragmentName="ss.fragment.NavBar" type="XML"/>
+
+      <VBox class="sapUiSmallMargin">
+        <Title text="Get in Touch" level="H1" />
+        <Text text="We’d love to hear from you! Reach out to us for any inquiries, collaborations, or project discussions." />
+
+        <List headerText="Contact Details" inset="false">
+          <StandardListItem
+            title="Phone"
+            description="+91 8867506736"
+            icon="sap-icon://phone"
+            type="Active"
+            press=".onPhonePress"
+          />
+          <StandardListItem
+            title="Whatsapp"
+            description="+91 7019089330"
+            icon="sap-icon://call"
+            type="Active"
+            press=".onWhatsappPress"
+          />
+          <StandardListItem
+            title="Email"
+            description="sidducivil07@gmail.com"
+            icon="sap-icon://email"
+            type="Active"
+            press=".onEmailPress"
+          />
+          <StandardListItem
+            title="Address"
+            description="SS Constructions, Bangalore Newtown-Yelahanka."
+            icon="sap-icon://building"
+          />
+          <StandardListItem
+            title="Address"
+            description="SS Constructions, Ward No-2 Hanamasagar Road Basavanagar Ilkal-587125."
+            icon="sap-icon://building"
+          />
+        </List>
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

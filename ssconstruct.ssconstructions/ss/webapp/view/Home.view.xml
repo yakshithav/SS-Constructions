@@ -1,0 +1,70 @@
+<mvc:View
+  controllerName="ss.controller.Home"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+
+  <Page title="S S Constructions Projects">
+    <content>
+      <!-- ✅ Reusable Navigation Bar Fragment -->
+      <core:Fragment fragmentName="ss.fragment.NavBar" type="XML"/>
+
+      <!-- ✅ Page Specific Content -->
+      <!-- Carousel (Auto Play Image Slider) -->
+      <Carousel id="homeCarousel" height="600px" loop="true" class="imageSlider">
+        
+        <!-- Slide 1 -->
+        <VBox class="slideBox">
+          <Image src="images/slider_img.jpg" alt="EXPERT CONSTRUCTION SERVICES" width="100%" height="100%"/>
+          <VBox class="sliderOverlay vastuOverlay" justifyContent="Center" alignItems="Center">
+            <Text text="We are Certified Engineers" class="slideSubtitle"/>
+            <Text text="EXPERT CONSTRUCTION SERVICES" class="slideTitle highlight"/>
+            <Text text="INNOVATIVE &amp; RELIABLE SOLUTIONS" class="slideTitle"/>
+            <VBox class="slideContent">
+              <Text text="We specialize in delivering top-quality construction services, ensuring precision, durability, and excellence in every project. From residential to commercial spaces, our skilled team transforms visions into reality with modern techniques and high-grade materials." class="slideDescription"/>
+            </VBox>
+            <HBox class="sliderButtons">
+              <Button text="Know More"  class="customButton"/>
+              <Button text="View Project" class="customButton"/>
+            </HBox>
+          </VBox>
+        </VBox>
+
+        <!-- Slide 2 -->
+        <VBox class="slideBox">
+          <Image src="images/slider_img2.jpg" alt="Building Dreams with Excellence" width="100%" height="100%"/>
+          <VBox class="sliderOverlay" justifyContent="Center" alignItems="Center">
+            <Text text="Building Dreams with Excellence" class="slideSubtitle"/>
+            <Text text="QUALITY CONSTRUCTION &amp; ENGINEERING" class="slideTitle highlight"/>
+            <VBox class="slideContent" alignItems="Center">
+              <Text text="STRONG FOUNDATIONS, TIMELESS DESIGNS" class="slideTagline"/>
+              <Text text="From concept to creation, we deliver structures that inspire trust and stand the test of time." class="slideDescription"/>
+            </VBox>
+            <HBox class="sliderButtons">
+              <Button text="Know More" class="customButton"/>
+              <Button text="View Project" class="customButton"/>
+            </HBox>
+          </VBox>
+        </VBox>
+
+        <!-- Slide 3 -->
+        <VBox class="slideBox">
+          <Image src="images/slider_img3.jpg" alt="Modern Infrastructure" width="100%" height="100%"/>
+          <VBox class="sliderOverlay" justifyContent="Center" alignItems="Center">
+            <Text text="Building Tomorrow" class="slideSubtitle"/>
+            <Text text="MODERN INFRASTRUCTURE" class="slideTitle highlight"/>
+            <Text text="SUSTAINABLE SOLUTIONS" class="slideTitle"/>
+            <VBox class="slideContent" alignItems="Center">
+              <Text text="TECHNOLOGY, SUSTAINABILITY, GROWTH" class="slideTagline"/>
+              <Text text="Embracing modern construction technologies and sustainable practices to build infrastructure that meets future needs while preserving the environment." class="slideDescription"/>
+            </VBox>
+            <HBox class="sliderButtons">
+              <Button text="Know More" class="customButton"/>
+              <Button text="View Project" class="customButton"/>
+            </HBox>
+          </VBox>
+        </VBox>
+      </Carousel>
+    </content>
+  </Page>
+</mvc:View>
