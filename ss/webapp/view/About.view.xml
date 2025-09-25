@@ -1,0 +1,86 @@
+<mvc:View
+  controllerName="ss.controller.About"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+>
+  <Page title="About Us">
+    <content>
+      <core:Fragment fragmentName="ss.fragment.NavBar" type="XML"/>
+
+      <!-- About Section -->
+      <HBox class="about-section" alignItems="Stretch" renderType="Div">
+        
+        <!-- Left Content -->
+        <VBox class="about-content" width="50%" renderType="Div">
+          <Title text="WELCOME TO S S CONSTRUCTIONS" level="H2" class="section-title"/>
+          <Text text="Trusted Civil Engineers &amp; Contractor" class="tagline"/>
+
+          <Text text="•➤ S S Constructions is a leading name in the construction industry, delivering 🏆 excellence in:" class="about-intro"/>
+
+
+          <Text text="○➤ Structural designs 🏗️" class="about-list"/>
+          <Text text="○➤ Architectural planning 📐" class="about-list"/>
+          <Text text="○➤ Turnkey building projects 🏢" class="about-list"/>
+
+        
+          <Text text="•➤ We specialize in:" class="about-intro"/>
+          <Text text="○➤  Residential 🏠,Commercial 🏢, and Vastu-compliant constructions 🕉️ " class="about-list"/>
+          <Text text="○➤ Door lock building constructions 🔒 " class="about-list"/>
+          <Text text="○➤ Structural &amp; interior drawings 🖊️ " class="about-list"/>
+
+          <Text text="•➤  Known for quality ✔️, durability 🛡️,, and precision 🎯.." class="about-intro"/>
+
+          <Text text="•➤ Committed to professionalism 👔 and customer satisfaction 👍, bringing your vision to life with innovative designs💡 and reliable execution🛠️.." class="about-intro"/>
+
+          <Link text="Know More" press=".onKnowMore" class="customButton"/>
+        </VBox>
+        
+        <!-- Right Side Image -->
+        <VBox class="about-image" width="50%" alignItems="Center" justifyContent="Center">
+          <Image src="images/man.png" alt="About Us"/>
+        </VBox>
+      </HBox>
+
+
+      <!-- WHY CHOOSE SECTION -->
+      <VBox class="why-choose-section" renderType="Div" alignItems="Center">
+        <Title text="WHY CHOOSE S S CONSTRUCTIONS? 🏠" level="H2" class="why-title"/>
+        <Text text="At S S Constructions, we take pride in delivering excellence 🏆 in every project we undertake. Here's why clients 🤝 trust us to bring their construction visions 🏗️ to life:" class="why-subtitle"/>
+        
+        <HBox justifyContent="SpaceAround" class="why-features" renderType="Div">
+          
+          <!-- Feature 1 -->
+          <VBox class="feature-box" width="20%" alignItems="Center">
+            <core:Icon src="sap-icon://e-care" class="feature-icon"/>
+            <Text text="WE DELIVER QUALITY ✅" class="feature-title"/>
+            <Text text="We believe in providing the highest quality of craftsmanship, ensuring that every structure we build stands the test of time." class="feature-desc"/>
+          </VBox>
+          
+          <!-- Feature 2 -->
+          <VBox class="feature-box" width="20%" alignItems="Center">
+            <core:Icon src="sap-icon://soccer" class="feature-icon"/>
+            <Text text="EFFICIENCY YOU CAN TRUST ⚡" class="feature-title"/>
+            <Text text="We understand the importance of deadlines. Our team works efficiently to deliver your project on schedule, without compromising quality." class="feature-desc"/>
+          </VBox>
+          
+          <!-- Feature 3 -->
+          <VBox class="feature-box" width="20%" alignItems="Center">
+            <core:Icon src="sap-icon://group" class="feature-icon"/>
+            <Text text="WE ARE PASSIONATE ❤️‍🔥" class="feature-title"/>
+            <Text text="Every project is a testament to our passion for construction. We approach each task with enthusiasm and dedication." class="feature-desc"/>
+          </VBox>
+          
+          <!-- Feature 4 -->
+          <VBox class="feature-box" width="20%" alignItems="Center">
+            <core:Icon src="sap-icon://chart-axis" class="feature-icon"/>
+            <Text text="PROFESSIONAL SERVICES 👷" class="feature-title"/>
+            <Text text="Our experienced team provides expert solutions to all your construction needs. You're getting trusted professionals dedicated to results." class="feature-desc"/>
+          </VBox>
+
+        </HBox>
+      </VBox>
+
+    </content>
+  </Page>
+</mvc:View>

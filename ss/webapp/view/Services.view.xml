@@ -1,0 +1,13 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  controllerName="ss.controller.Services">
+
+  <Page title="Our Services">
+    <content>
+      <core:Fragment fragmentName="ss.fragment.NavBar" type="XML"/>
+
+    </content>
+  </Page>
+</mvc:View>

@@ -1,0 +1,69 @@
+<mvc:View
+  controllerName="ss.controller.Home"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core">
+
+  <Page title="S S Constructions Projects">
+  
+    <content>
+
+      <core:Fragment fragmentName="ss.fragment.NavBar" type="XML"/>
+
+    
+    
+      <Carousel id="homeCarousel" height="600px" loop="true" class="imageSlider">
+        
+        <!-- Slide 1 -->
+        <VBox class="slideBox">
+          <Image src="images/slider_img.jpg" alt="EXPERT CONSTRUCTION SERVICES" width="100%" height="100%"/>
+          <VBox class="sliderOverlay" justifyContent="Center" alignItems="Center">
+            <Text text="We are Certified Engineers" class="slideSubtitle"/>
+            <Text text="EXPERT CONSTRUCTION SERVICES" class="slideTitle highlight"/>
+            <Text text="INNOVATIVE &amp; RELIABLE SOLUTIONS" class="slideTitle"/>
+            <VBox class="slideContent">
+              <Text text="We specialize in delivering top-quality construction services, ensuring precision, durability, and excellence in every project. From residential to commercial spaces, our skilled team transforms visions into reality with modern techniques and high-grade materials." class="slideDescription"/>
+            </VBox>
+            <HBox class="sliderButtons">
+              <Link text="Know More"  press=".onKnowMore"  class="customButton"/>
+              <Link text="View Projects" href="#projects" class="customButton"/>
+            </HBox>
+          </VBox>
+        </VBox>
+
+        <!-- Slide 2 -->
+        <VBox class="slideBox">
+          <Image src="images/slider_img2.jpg" alt="Building Dreams with Excellence" width="100%" height="100%"/>
+          <VBox class="sliderOverlay" justifyContent="Center" alignItems="Center">
+            <Text text="Building Dreams with Excellence" class="slideSubtitle"/>
+            <Text text="QUALITY CONSTRUCTION &amp; ENGINEERING" class="slideTitle highlight"/>
+            <VBox class="slideContent" alignItems="Center">
+              <Text text="From concept to completion we bring expertise and innovation to every project. Our team is commited to delivering hight-quality construction solutions, ensuring safety,sustainability, and customer satisfaction at every step." class="slideDescription"/>
+            </VBox>
+            <HBox class="sliderButtons">
+              <Link text="Know More"  press=".onKnowMore" class="customButton"/>
+              <Link text="View Projects" href="#projects" class="customButton"/>
+            </HBox>
+          </VBox>
+        </VBox>
+
+        <!-- Slide 3 -->
+        <VBox class="slideBox">
+          <Image src="images/slider_img3.jpg" alt="Modern Infrastructure" width="100%" height="100%"/>
+          <VBox class="sliderOverlay" justifyContent="Center" alignItems="Center">
+            <Text text="Harmony in Design" class="slideSubtitle"/>
+            <Text text="VASTU-COMPLIANT CONSTRUCTION" class="slideTitle highlight"/>
+            <Text text="BALANCE, ENERGY &amp; PROSPERITY" class="slideTitle"/>
+            <VBox class="slideContent" alignItems="Center">
+              <Text text="We integrate Vastu principles into our construction to create spaces filled with positive energy and harmony. From home layouts to commerical structures, our designs ensure well-being, prosperity, and a balanced living environment." class="slideDescription"/>
+            </VBox>
+            <HBox class="sliderButtons">
+              <Link text="Know More"  press=".onKnowMore" class="customButton"/>
+              <Link text="View Projects" href= "#projects" class="customButton"/>
+            </HBox>
+          </VBox>
+        </VBox>
+      </Carousel>
+    </content>
+  </Page>
+</mvc:View>
