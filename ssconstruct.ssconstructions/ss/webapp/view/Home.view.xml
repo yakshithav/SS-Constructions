@@ -1,0 +1,92 @@
+<mvc:View
+  controllerName="ss.controller.Home"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  xmlns:layout="sap.ui.layout"
+  xmlns:html="http://www.w3.org/1999/xhtml">
+
+  <Page title="S S Constructions Projects" showHeader="false" class="sapUiNoContentPadding customPage">
+
+    <content>
+    
+      <VBox renderType="Bare" class="sapUiNoContentPadding">
+        <core:Fragment fragmentName="ss.fragment.NavBar" type="XML"/>
+      </VBox>
+
+    
+      <Carousel 
+        id="homeCarousel"
+        height="500px"
+        loop="true"
+        class="sapUiNoContentPadding customCarousel">
+
+        <!-- Slide 1 -->
+        <VBox renderType="Div" class="carouselSlide">
+          <Image src="images/slider_img.jpg"
+                 alt="EXPERT CONSTRUCTION SERVICES"
+                 width="100%"
+                 densityAware="false"
+                 class="carouselImage"/>
+          <VBox justifyContent="Center" alignItems="Center" class="carouselOverlay">
+            <Text text="We are Certified Engineers" class="carouselSubtitle"/>
+            <Text text="EXPERT CONSTRUCTION SERVICES" class="carouselTitle"/>
+            <Text text="INNOVATIVE &amp; RELIABLE SOLUTIONS" class="carouselSubtitle2"/>
+            <VBox class="carouselTextContainer">
+              <Text text="We specialize in delivering top-quality construction services, ensuring precision, durability, and excellence in every project. From residential to commercial spaces, our skilled team transforms visions into reality with modern techniques and high-grade materials."
+                    class="carouselDescription" wrapping="true"/>
+            </VBox>
+            <HBox justifyContent="Center" wrap="Wrap" class="carouselButtonContainer">
+              <Button text="Know More" press=".onKnowMore" class="sapUiSmallMarginEnd" type="Emphasized"/>
+              <Button text="View Projects" press=".onViewProjects" type="Accept"/>
+            </HBox>
+          </VBox>
+        </VBox>
+
+        <!-- Slide 2 -->
+        <VBox renderType="Div" class="carouselSlide">
+          <Image src="images/slider_img2.jpg"
+                 alt="Building Dreams with Excellence"
+                 width="100%"
+                 densityAware="false"
+                 class="carouselImage"/>
+          <VBox justifyContent="Center" alignItems="Center" class="carouselOverlay">
+            <Text text="Building Dreams with Excellence" class="carouselSubtitle"/>
+            <Text text="QUALITY CONSTRUCTION &amp; ENGINEERING" class="carouselTitle"/>
+            <VBox class="carouselTextContainer">
+              <Text text="From concept to completion, we bring expertise and innovation to every project. Our team is committed to delivering high-quality construction solutions, ensuring safety, sustainability, and customer satisfaction at every step." class="carouselDescription" wrapping="true"/>
+            </VBox>
+            <HBox justifyContent="Center" wrap="Wrap" class="carouselButtonContainer">
+              <Button text="Know More" press=".onKnowMore" class="sapUiSmallMarginEnd" type="Emphasized"/>
+              <Button text="View Projects" press=".onViewProjects" type="Accept"/>
+            </HBox>
+          </VBox>
+        </VBox>
+
+        <!-- Slide 3 -->
+        <VBox renderType="Div" class="carouselSlide">
+          <Image src="images/slider_img3.jpg"
+                 alt="Modern Infrastructure"
+                 width="100%"
+                 densityAware="false"
+                 class="carouselImage"/>
+          <VBox justifyContent="Center" alignItems="Center" class="carouselOverlay">
+            <Text text="Harmony in Design" class="carouselSubtitle"/>
+            <Text text="VASTU-COMPLIANT CONSTRUCTION" class="carouselTitle"/>
+            <Text text="BALANCE, ENERGY &amp; PROSPERITY" class="carouselSubtitle2"/>
+            <VBox class="carouselTextContainer">
+              <Text text="We integrate Vastu principles into our construction to create spaces filled with positive energy and harmony. From home layouts to commercial structures, our designs ensure well-being, prosperity, and a balanced living environment." 
+                    class="carouselDescription" wrapping="true"/>
+            </VBox>
+            <HBox justifyContent="Center" wrap="Wrap" class="carouselButtonContainer">
+              <Button text="Know More" press=".onKnowMore" class="sapUiSmallMarginEnd" type="Emphasized"/>
+              <Button text="View Projects" press=".onViewProjects" type="Accept"/>
+            </HBox>
+          </VBox>
+        </VBox>
+
+      </Carousel>
+
+    </content>
+  </Page>
+</mvc:View>

@@ -1,0 +1,93 @@
+<mvc:View
+    controllerName="ss.controller.Portfolio"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:layout="sap.ui.layout"
+    displayBlock="true"
+    height="100%">
+    
+   <Page 
+        title="Our Portfolio"
+        showHeader="false"
+        contentTopPadding="0"
+        class="sapUiNoContentPadding">       
+
+        <content>
+            <!-- NavBar implemented exactly like in home view -->
+            <VBox renderType="Bare" class="sapUiNoContentPadding">
+                <core:Fragment fragmentName="ss.fragment.NavBar" type="XML"/>
+            </VBox>
+
+            <!-- MADE WITH LOVE Section -->
+            <Panel headerText="MADE WITH LOVE ❤️🛠️" class="sapUiResponsiveMargin sapUiSmallMarginTop">
+                <VBox class="sapUiSmallMargin">
+                    <Text 
+                        text="At S S Constructions, every project is a testament to our commitment to quality, precision, and passion. Our portfolio showcases a diverse range of construction and design works that reflect the unique needs and aspirations of our clients."
+                        class="sapUiSmallMarginBottom"/>
+                    <Text 
+                        text="From stunning architectural designs to expertly executed renovations and seamless construction management, each project we undertake is completed with love and dedication."
+                        class="sapUiSmallMarginBottom"/>
+                    <Text 
+                        text="Explore our completed projects below to see the exceptional results that set us apart."
+                        class="sapUiSmallMarginBottom"/>
+                </VBox>
+            </Panel>
+
+            <!-- Image Gallery Section -->
+            <Panel headerText="Our Project Gallery" class="sapUiResponsiveMargin">
+                <layout:Grid containerQuery="true" class="sapUiSmallMargin" hSpacing="1" vSpacing="1">
+                    
+                    <VBox alignItems="Center" class="sapUiTinyMargin">
+                        <Image src="./images/portfolio1.jpg" alt="Residential Project - Ilkal"
+                            width="100%" height="200px" press="onImagePress"
+                            data-popup-image="./images/portpopup1.jpg"/>
+                        <Text text="Residential Project - Ilkal" class="sapUiTinyMarginTop"/>
+                    </VBox>
+                    
+                    <VBox alignItems="Center" class="sapUiTinyMargin">
+                        <Image src="./images/portfolio2.jpg" alt="Commercial Complex - Bangalore"
+                            width="100%" height="200px" press="onImagePress"
+                            data-popup-image="./images/portpopup2.jpg"/>
+                        <Text text="Commercial Complex - Bangalore" class="sapUiTinyMarginTop"/>
+                    </VBox>
+                    
+                    <VBox alignItems="Center" class="sapUiTinyMargin">
+                        <Image src="./images/portfolio3.jpg" alt="Luxury Villa - Bangalore"
+                            width="100%" height="200px" press="onImagePress"
+                            data-popup-image="./images/portpopup3.jpg"/>
+                        <Text text="Luxury Villa - Bangalore" class="sapUiTinyMarginTop"/>
+                    </VBox>
+                    
+                    <VBox alignItems="Center" class="sapUiTinyMargin">
+                        <Image src="./images/portfolio4.jpg" alt="Community Center - Budhihal"
+                            width="100%" height="200px" press="onImagePress"
+                            data-popup-image="./images/portpopup4.jpg"/>
+                        <Text text="Community Center - Budhihal" class="sapUiTinyMarginTop"/>
+                    </VBox>
+                    
+                    <VBox alignItems="Center" class="sapUiTinyMargin">
+                        <Image src="./images/portfolio5.jpg" alt="Religious Complex - Ilkal"
+                            width="100%" height="200px" press="onImagePress"
+                            data-popup-image="./images/portpopup5.jpg"/>
+                        <Text text="Religious Complex - Ilkal" class="sapUiTinyMarginTop"/>
+                    </VBox>
+                    
+                    <VBox alignItems="Center" class="sapUiTinyMargin">
+                        <Image src="./images/portfolio6.jpg" alt="Modern Residence - Bangalore"
+                            width="100%" height="200px" press="onImagePress"
+                            data-popup-image="./images/portpopup6.jpg"/>
+                        <Text text="Modern Residence - Bangalore" class="sapUiTinyMarginTop"/>
+                    </VBox>
+                    
+                    <VBox alignItems="Center" class="sapUiTinyMargin">
+                        <Image src="./images/portfolio7.jpg" alt="Ongoing Project - Bangalore"
+                            width="100%" height="200px" press="onImagePress"
+                            data-popup-image="./images/portpopup7.jpg"/>
+                        <Text text="Ongoing Project - Bangalore" class="sapUiTinyMarginTop"/>
+                    </VBox>
+                </layout:Grid>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>
