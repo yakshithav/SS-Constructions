@@ -1,0 +1,152 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:layout="sap.ui.core">
+
+    <VBox fitContainer="true" class="sapUiNoMargin sapUiNoContentPadding">
+    
+        <Toolbar design="Transparent" class="sapUiNoMargin sapUiNoContentPadding" height="auto">
+            <HBox 
+                alignItems="Center" 
+                justifyContent="SpaceBetween"
+                wrap="Wrap"
+                width="100%"
+                class="sapUiNoMargin sapUiNoContentPadding">
+                
+           
+                <HBox 
+                    alignItems="Center" 
+                    justifyContent="Start"
+                    wrap="Wrap"
+                    class="sapUiNoMargin sapUiNoContentPadding">
+                    
+                    <HBox alignItems="Center" class="sapUiTinyMarginEnd">
+                        <core:Icon src="sap-icon://call" size="1rem" class="sapUiTinyMarginEnd"/>
+                        <Link text="+918867506736" press="onCallPress"/>
+                    </HBox>
+
+                
+                    <HBox alignItems="Center" class="sapUiTinyMarginEnd">
+                        <Image 
+                            src="./images/whatsapp-logo.svg" 
+                            width="20px" 
+                            height="20px" 
+                            press="onWhatsAppPress"
+                            class="sapUiTinyMarginEnd"/>
+                        <Link text="+917019089330" press="onWhatsAppPress"/>
+                    </HBox>
+
+                    <HBox alignItems="Center" class="sapUiTinyMarginEnd">
+                        <core:Icon src="sap-icon://email" size="1rem" class="sapUiTinyMarginEnd"/>
+                        <Link text="sidducivil07@gmail.com" press="onEmailPress"/>
+                    </HBox>
+
+                    <HBox alignItems="Center" class="sapUiTinyMarginEnd">
+                        <core:Icon src="sap-icon://time-entry-request" size="1rem" class="sapUiTinyMarginEnd"/>
+                        <Text text="Mon-Sat 9:00AM - 08:00PM"/>
+                    </HBox>
+                </HBox>
+
+             
+                <HBox 
+                    alignItems="Center" 
+                    justifyContent="End"
+                    wrap="Wrap"
+                    class="sapUiNoMargin sapUiNoContentPadding">
+                    
+                
+                    <HBox alignItems="Center" class="sapUiTinyMarginEnd">
+                        <Image 
+                            src="./images/facebook-logo.svg" 
+                            width="20px" 
+                            height="20px" 
+                            press="onFacebookPress"
+                            class="sapUiTinyMarginEnd"/>
+                        <!-- <Link text="Facebook" press="onFacebookPress"/> -->
+                    </HBox>
+                    
+             
+                    <HBox alignItems="Center" class="sapUiTinyMarginEnd">
+                        <Image 
+                            src="./images/instagram-logo.svg" 
+                            width="20px" 
+                            height="20px" 
+                            press="onInstagramPress"
+                            class="sapUiTinyMarginEnd"/>
+                        <!-- <Link text="Instagram" press="onInstagramPress"/> -->
+                    </HBox>
+                    
+                    
+                    <HBox alignItems="Center">
+                        <Image 
+                            src="./images/youtube-logo.svg" 
+                            width="20px" 
+                            height="20px" 
+                            press="onYouTubePress"
+                            class="sapUiTinyMarginEnd"/>
+                        <!-- <Link text="YouTube" press="onYouTubePress"/> -->
+                    </HBox>
+                </HBox>
+            </HBox>
+        </Toolbar>
+
+        <Toolbar design="Solid" class="sapUiNoMargin sapUiNoContentPadding" height="5rem">
+            <HBox 
+                alignItems="Center" 
+                justifyContent="SpaceBetween"
+                width="100%"
+                class="sapUiNoMargin sapUiNoContentPadding">
+                
+               
+                <HBox alignItems="Center" class="sapUiNoMargin sapUiNoContentPadding">
+                    <Image src="images/SSCLogonew2.png" alt="Company Logo" height="4rem" densityAware="false"/>
+                </HBox>
+
+         
+                <HBox 
+                    alignItems="Center" 
+                    justifyContent="End"
+                    visible="{= !${device>/system/phone} }"
+                    class="sapUiNoMargin sapUiNoContentPadding">
+                    
+                    <Link text="Home" press="onNavHome" class="sapUiTinyMarginEnd"/>
+                    <Link text="About Us" press="onNavAbout" class="sapUiTinyMarginEnd"/>
+                    <Link text="Services" press="onNavServices" class="sapUiTinyMarginEnd"/>
+                    <Link text="Portfolio" press="onNavPortfolio" class="sapUiTinyMarginEnd"/>
+                    <Link text="Projects" press="onNavProjects" class="sapUiTinyMarginEnd"/>
+                    <Link text="Contact Us" press="onNavContact"/>
+                </HBox>
+
+                <!-- Mobile Menu Button -->
+                <HBox 
+                    alignItems="Center" 
+                    justifyContent="End"
+                    visible="{= ${device>/system/phone} }"
+                    class="sapUiNoMargin sapUiNoContentPadding">
+                    
+                    <Button 
+                        icon="sap-icon://menu"
+                        press="onMobileMenuPress"
+                        type="Transparent"/>
+                </HBox>
+            </HBox>
+        </Toolbar>
+
+        <!-- Mobile Navigation Popover -->
+        <Popover
+            id="mobileNavPopover"
+            placement="Bottom"
+            showHeader="false"
+            contentMinWidth="200px">
+            
+            <List>
+                <StandardListItem title="Home" type="Navigation" press="onNavHome"/>
+                <StandardListItem title="About Us" type="Navigation" press="onNavAbout"/>
+                <StandardListItem title="Services" type="Navigation" press="onNavServices"/>
+                <StandardListItem title="Portfolio" type="Navigation" press="onNavPortfolio"/>
+                <StandardListItem title="Projects" type="Navigation" press="onNavProjects"/>
+                <StandardListItem title="Contact Us" type="Navigation" press="onNavContact"/>
+            </List>
+        </Popover>
+    </VBox>
+</core:FragmentDefinition>
